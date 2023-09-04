@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>HELLO</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           body {
+            background: url(https://media.istockphoto.com/id/1465053603/photo/an-original-background-image-for-design-or-product-presentation-with-a-play-of-light-and.jpg?b=1&s=612x612&w=0&k=20&c=-Htvw4LjJx48CgncBdKZRoJCbav9ZLBw8E4a2PCEJsk=);
+            background-size: cover;
+            background-repeat: no-repeat;
+           }
+           h1{
+                text-align: center;
+                font-size: 50px;
+                color:argb(18, 119, 207)
+            }
+            td:hover,h1:hover{
+                transform: scale(1.2);
+            }
+            .container{
+  width: 400px;
+  height: 300px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {left:90px; top:100px;}
+  25%  { left:150px; top:100px;}
+  50%  { left:150px; top:200px;}
+  75%  { left:90px; top:200px;}
+  100% { left:90px; top:100px;}
+}
+
+.container{
+    position: relative;
+    display: block;
+    border: 3px solid transparent;
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+}
+
+
+/* ================= HEAD ================== */
+
+.head {
+    position: relative;
+    margin: auto;
+    margin-top: 10%;
+    width: 320px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/*============ ears ============ */
+.ear {
+    z-index: -1;
+    background-color: black;
+    position: absolute;
+    width: 150px;
+    height: 130px;
+    border-radius: 50%;
+    top: 5%;
+}
+
+#left-ear {
+  left: 10%;
+}
+
+#right-ear {
+    left: 60%;
+}
+
+.inner-ear {
+    position: absolute;
+    background-color: #524c4b;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    top: 25%;
+    left: 25%;
+}
+
+/* ========== eyes =========== */
+.eye {
+    background-color: black;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    top: 20%;
+}
+
+#left-eye {
+    transform: rotate(-40deg);
+    left: 20%;
+}
+
+#right-eye {
+    transform: rotate(40deg);
+    right: 20%;
+}
+
+.inner-eye {
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    top: 40%;
+}
+
+#left-inner-eye {
+    transform: rotate(30deg);
+    right: 20%;
+}
+
+#right-inner-eye {
+    transform: rotate(-30deg);
+    left: 20%;
+}
+
+.pupil {
+    position: absolute;
+    background-color: black;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    top: 30%;
+}
+
+#left-pupil {
+    right: 20%;
+}
+
+#right-pupil {
+    left: 20%;
+}
+
+/* ============= nose ============ */
+.nose {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    width: 20%;
+    height: 15%;
+    top: 52%;
+    left: 40%;
+}
+
+/* ============ smile ============= */
+.line{
+    position: absolute;
+    /* border-left: 5px solid black; */
+    height: 5%;
+    width: 1%;
+    background-color: black;
+    left: 49.5%;
+    bottom: 28%;
+}
+
+.smile {
+    position: absolute;
+    background-color: transparent;
+    border-bottom: 8px solid black;
+    border-radius: 50%;
+    width: 25%;
+    height: 20%;
+    bottom: 26%;
+    left: 37.5%;
+}
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="eye" id="left-eye">
+                <div class="inner-eye" id="left-inner-eye">
+                    <div class="pupil" id="left-pupil">
+
+                    </div>
+                </div>
+            </div>
+            <div class="eye" id="right-eye">
+                <div class="inner-eye" id="right-inner-eye">
+                    <div class="pupil" id="right-pupil">
+
+                    </div>
+                </div>
+            </div>
+            <div class="nose">
+
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="smile">
+
+            </div>
+
+        </div>
+        <div class="ear" id="left-ear">
+            <div class="inner-ear" id="left-inner-ear">
+
+            </div>
+        </div>
+        <div class="ear" id="right-ear">
+            <div class="inner-ear" id="right-inner-ear">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
